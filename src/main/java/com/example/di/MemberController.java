@@ -3,9 +3,10 @@ package com.example.di;
 import java.util.List;
 
 public class MemberController {
-    private MemberService memberService;
+    //
+    private NewMemberService memberService;
 
-    public MemberController(MemberService memberService) {
+    public MemberController(NewMemberService memberService) {
         this.memberService = memberService;
     }
 
