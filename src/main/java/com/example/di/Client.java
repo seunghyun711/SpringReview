@@ -5,7 +5,7 @@ import java.util.List;
 public class Client {
     public static void main(String[] args) {
 
-        NewMemberService memberService = new NewMemberService();
+        MemberService memberService = new NewMemberService();
         MemberController controller = new MemberController(memberService);
         List<Member> memberList = controller.getMember();
     }

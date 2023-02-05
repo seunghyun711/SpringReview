@@ -4,9 +4,9 @@ import java.util.List;
 
 public class MemberController {
     //
-    private NewMemberService memberService;
+    private MemberService memberService;
 
-    public MemberController(NewMemberService memberService) {
+    public MemberController(MemberService memberService) {
         this.memberService = memberService;
     }
 
