@@ -1,4 +1,4 @@
-package com.example.dipractice;
+package com.example.dipractice.team;
 
 // 순수 자바코드로 팀 로직 테스트
 public class TeamTest {

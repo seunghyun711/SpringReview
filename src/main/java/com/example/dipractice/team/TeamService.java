@@ -1,4 +1,4 @@
-package com.example.dipractice;
+package com.example.dipractice.team;
 
 public class TeamService {
     private final TeamRepository teamRepository = new TeamRepository();

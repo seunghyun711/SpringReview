@@ -1,4 +1,4 @@
-package com.example.dipractice;
+package com.example.dipractice.team;
 
 import java.util.HashMap;
 import java.util.Map;

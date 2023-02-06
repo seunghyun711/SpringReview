@@ -1,4 +1,4 @@
-package com.example.dipractice;
+package com.example.dipractice.team;
 
 public class Team {
     private Long teamId;
