@@ -1,4 +1,4 @@
-package com.example.dipractice;
+package com.example.dipractice.championships;
 
 // 팀이 참가할 수 있는 대회 클래스
 public class ChampionShips {
