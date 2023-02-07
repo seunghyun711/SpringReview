@@ -1,7 +1,11 @@
 package com.example.dipractice.championships;
 
 public class ChampionsShipsService {
-    private static ChampionShipRepository champsRepository = new ChampionShipRepository();
+    private final ChampionShipRepository champsRepository;
+
+    public ChampionsShipsService(ChampionShipRepository championShipRepository) {
+        this.champsRepository = championShipRepository;
+    }
 
 
     // 대회 생성

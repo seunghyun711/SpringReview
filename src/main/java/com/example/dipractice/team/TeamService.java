@@ -1,7 +1,11 @@
 package com.example.dipractice.team;
 
 public class TeamService {
-    private final TeamRepository teamRepository = new TeamRepository();
+    private final TeamRepository teamRepository;
+
+    public TeamService(TeamRepository teamRepository) {
+        this.teamRepository = teamRepository;
+    }
 
     // 팀 생성
     public void createTeam(Team team) {
