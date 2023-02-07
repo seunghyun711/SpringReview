@@ -5,10 +5,12 @@ import com.example.dipractice.championships.ChampionsShipsService;
 import com.example.dipractice.team.TeamRepository;
 import com.example.dipractice.team.TeamService;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 // 의존성 주입을 관리하는 클래스
 @Configuration
+@ComponentScan
 public class DependencyConfig {
 
     @Bean

@@ -1,8 +1,13 @@
 package com.example.dipractice.championships;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class ChampionsShipsService {
     private final ChampionShipRepository champsRepository;
 
+    @Autowired
     public ChampionsShipsService(ChampionShipRepository championShipRepository) {
         this.champsRepository = championShipRepository;
     }

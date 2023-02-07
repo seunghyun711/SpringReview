@@ -1,8 +1,11 @@
 package com.example.dipractice.championships;
 
+import org.springframework.stereotype.Component;
+
 import java.util.HashMap;
 import java.util.Map;
 
+@Component
 public class ChampionShipRepository {
     private static Map<Long, ChampionShips> cs = new HashMap<>();
 
