@@ -1,9 +1,12 @@
 package com.example.dipractice.team;
 
+import com.example.dipractice.DependencyConfig;
+
 // 순수 자바코드로 팀 로직 테스트
 public class TeamTest {
     public static void main(String[] args) {
-        TeamService teamService = new TeamService();
+        DependencyConfig dependencyConfig = new DependencyConfig();
+        TeamService teamService = dependencyConfig.teamService();
 
         // 팀 생성
         Team team = new Team(1L,"Manchester United", "EPL","Old Trafford");

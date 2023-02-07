@@ -1,8 +1,11 @@
 package com.example.dipractice.championships;
 
+import com.example.dipractice.DependencyConfig;
+
 public class ChampionShipTest {
     public static void main(String[] args) {
-        ChampionsShipsService css = new ChampionsShipsService();
+        DependencyConfig dependencyConfig = new DependencyConfig();
+        ChampionsShipsService css = dependencyConfig.championsShipsService();
         ChampionShips cs = new ChampionShips(1L,"Champions League","UEFA","Real Madrid");
 
         css.createChampionship(cs);

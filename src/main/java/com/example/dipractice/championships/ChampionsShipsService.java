@@ -3,6 +3,7 @@ package com.example.dipractice.championships;
 public class ChampionsShipsService {
     private static ChampionShipRepository champsRepository = new ChampionShipRepository();
 
+
     // 대회 생성
     public void createChampionship(ChampionShips championShips){
         champsRepository.postChampionShip(championShips);
