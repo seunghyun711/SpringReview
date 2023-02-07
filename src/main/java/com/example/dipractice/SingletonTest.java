@@ -3,6 +3,7 @@ package com.example.dipractice;
 import com.example.dipractice.team.TeamService;
 
 public class SingletonTest {
+    // 싱글톤 적용 x
     static DependencyConfig dependencyConfig = new DependencyConfig();
 
     static TeamService teamService1 = dependencyConfig.teamService();
