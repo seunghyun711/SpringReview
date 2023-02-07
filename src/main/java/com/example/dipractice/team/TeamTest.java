@@ -1,12 +1,19 @@
 package com.example.dipractice.team;
 
 import com.example.dipractice.DependencyConfig;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 // 순수 자바코드로 팀 로직 테스트
 public class TeamTest {
     public static void main(String[] args) {
-        DependencyConfig dependencyConfig = new DependencyConfig();
-        TeamService teamService = dependencyConfig.teamService();
+        // 기존에는 DependencyConfig를 직접 가져와 주입하는 방식을 사용했다.
+//        DependencyConfig dependencyConfig = new DependencyConfig();
+//        TeamService teamService = dependencyConfig.teamService();
+        // 이제는 new AnnotationConfigApplicationContext(DependencyConfig.class);로 스프링 컨테이너에 등록된 빈을 가져오는 방식을 사용한다.
+        ApplicationContext ac = new AnnotationConfigApplicationContext(DependencyConfig.class);
+        TeamService teamService = ac.getBean("teamService", TeamService.class);
+
 
         // 팀 생성
         Team team = new Team(1L,"Manchester United", "EPL","Old Trafford");

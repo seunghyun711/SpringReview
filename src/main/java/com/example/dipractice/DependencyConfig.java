@@ -13,6 +13,7 @@ import org.springframework.context.annotation.Configuration;
 @ComponentScan
 public class DependencyConfig {
 
+    // @Bean을 통해 스프링 컨테이너에 등록한다.
     @Bean
     public TeamService teamService(){
         return new TeamService(teamRepository());
